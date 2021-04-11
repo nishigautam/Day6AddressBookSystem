@@ -5,5 +5,8 @@ public class Main {
 		System.out.println("Create your first contact.");
 		ContactDetail contactBook = new ContactDetail("Nishi","Gautam","Mayur Vistar","Lucknow","UP",2260,"9553470596","nishi@gmail.com");
 		contactBook.printAddressbook();
+		
+		ContactDetail newContact = new ContactDetail(null,null,null,null,null,0,null,null);
+		newContact.addNewContact();
 	}
 }
