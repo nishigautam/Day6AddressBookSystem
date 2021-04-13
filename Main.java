@@ -54,8 +54,21 @@ public class Main {
 		System.out.println(contactArray);
 	}
 	
+	public void deleteContact() {
+		System.out.println("Enter the first name to delete the contact details:");
+		String fn = sc.nextLine();
+		ContactDetail obj = contactMap.get(fn);
+		contactArray.remove(obj);
+	}
+	
 	public static void main(String args[]) {
 		Scanner s = new Scanner(System.in);
+		int num = s.nextInt();
+		int comp = (int)num;
+		ContactDetail size[] = new ContactDetail[num];
+		for(int i = 0; i < size.length; i++) {
+			
+		}
 		System.out.println("Enter First Name :");
 		String firstname = s.nextLine();
 		System.out.println("Enter Last Name :");
@@ -78,6 +91,9 @@ public class Main {
 	ContactOne.printContact();
 	ContactOne.editContact();
 	System.out.println("After ContactBook gets edited :");
+	ContactOne.printContact();
+	ContactOne.deleteContact();
+	System.out.println("After Deleting the contact:");
 	ContactOne.printContact();
 	}
 }
