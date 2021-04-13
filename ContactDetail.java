@@ -12,6 +12,7 @@ public class ContactDetail {
 	
 	public ContactDetail(String firstname, String lastname, String address, 
 			String state, String city, int pincode, long phonenumber, String emailid) {
+		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.address = address;
